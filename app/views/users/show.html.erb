@@ -8,15 +8,11 @@
     </section>
 
     <section class="following">
-      <% if @user.following_users.any? %>
-        <%= link_to "フォロー", followings_user_path %>
-      <% end %>
+      <%= link_to "フォロー", followings_user_path %>
     </section>
 
     <section class="follower">
-      <% if @user.follower_users.any? %>
-        <%= link_to "フォロワー", followers_user_path %>      
-      <% end %>
+      <%= link_to "フォロワー", followers_user_path %>      
     </section>
     
   </aside>

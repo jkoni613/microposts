@@ -24,6 +24,8 @@
           <%= render partial: 'users/followings', locals: { following_user: following_user } %>
         <% end %>
       </ol>
+    <% else %>
+      <h3>フォローしている人はいません</h3>
     <% end %>
   </div>
 </div>
