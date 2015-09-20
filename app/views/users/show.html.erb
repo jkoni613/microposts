@@ -6,6 +6,19 @@
         <%= @user.name %>
       </h1>
     </section>
+
+    <section class="following">
+      <% if @user.following_users.any? %>
+        <%= link_to "フォロー", followings_user_path %>
+      <% end %>
+    </section>
+
+    <section class="follower">
+      <% if @user.follower_users.any? %>
+        <%= link_to "フォロワー", followers_user_path %>      
+      <% end %>
+    </section>
+    
   </aside>
   <div class="col-md-8">
     <%= render 'follow_form' if logged_in? %>

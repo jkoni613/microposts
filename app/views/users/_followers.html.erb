@@ -1,0 +1,4 @@
+<li>
+  <%= link_to gravatar_for(follower_user, size: 50), follower_user %>
+  <span class="name"><%= link_to follower_user.name, user_path(follower_user.id) %></span>
+</li>
