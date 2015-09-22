@@ -44,5 +44,6 @@ group :development, :test do
   gem 'spring'
 
   gem 'kaminari'
+  gem 'better_errors'
 end
 
